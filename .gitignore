@@ -106,5 +106,9 @@ Makefile*
 *.exe
 *.out
 *.app
-
+#Debug
+*.ilk
+*.pdb
+*.obj
+*.tlog
 

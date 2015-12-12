@@ -26,7 +26,7 @@ int main(int argc, char *argv[])
 	Content *content = new Content(splitterMain);
 	QObject::connect(list, SIGNAL(currentRowChanged(int)), content->stack, SLOT(setCurrentIndex(int)));
 
-	//QObject::connect(content->CloseBtn, SIGNAL(clicked()), a, SLOT(a.exec()));
+	//QObject::connect(content->CloseBtn, SIGNAL(clicked()), content, SLOT(content->close()));
 
 	splitterMain->setWindowTitle(QObject::tr("修改用户资料"));
 	splitterMain->setMinimumSize(splitterMain->minimumSize());

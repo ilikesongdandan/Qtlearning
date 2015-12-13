@@ -5,6 +5,7 @@
 //#include "ui_dialog.h"
 #include "headers.h"
 #include "inputdlg.h"
+#include "maxboxdlg.h"
 
 class Dialog : public QDialog
 {
@@ -28,11 +29,15 @@ private:
 
 	QPushButton *intputBtn;
 	InputDlg *inputDlg;
+
+	QPushButton *MsgBtn;
+	maxboxDlg *msgDlg;
 private slots:
 	void showfile();
 	void showcolor();
 	void showfont();
 	void showInputDlg();
+	void showMxgDlg();
 };
 
 #endif // DIALOG_H

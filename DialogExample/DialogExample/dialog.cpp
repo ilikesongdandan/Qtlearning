@@ -36,7 +36,9 @@ Dialog::Dialog(QWidget *parent)
 	mainLayout->addWidget(intputBtn, 3, 0);
 	connect(intputBtn, SIGNAL(clicked()), this, SLOT(showInputDlg()));
 
-
+	MsgBtn = new QPushButton(tr("标准消息对话框实例"));
+	mainLayout->addWidget(MsgBtn, 3, 1);
+	connect(MsgBtn, SIGNAL(clicked()),this,SLOT(showMxgDlg()));
 
 
 	mainLayout->setSizeConstraint(QLayout::SetFixedSize);
@@ -66,6 +68,11 @@ void Dialog::showInputDlg(){
 	inputDlg = new InputDlg(this);
 	inputDlg->show();
 }
+void Dialog::showMxgDlg(){
+	msgDlg = new maxboxDlg(this);
+	msgDlg->show();
+}
+
 Dialog::~Dialog()
 {
 

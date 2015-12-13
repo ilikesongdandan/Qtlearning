@@ -21,5 +21,6 @@
 #include <QtWidgets/QColorDialog>
 #include <QtWidgets/QFontDialog>
 #include <QtWidgets/QInputDialog>
+#include <QtWidgets/QMessageBox>
 
 #endif

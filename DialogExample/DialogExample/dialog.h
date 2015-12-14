@@ -32,12 +32,16 @@ private:
 
 	QPushButton *MsgBtn;
 	maxboxDlg *msgDlg;
+
+	QPushButton *CustomBtn;
+	QLabel *label;
 private slots:
 	void showfile();
 	void showcolor();
 	void showfont();
 	void showInputDlg();
 	void showMxgDlg();
+	void showCustomDlg();
 };
 
 #endif // DIALOG_H
